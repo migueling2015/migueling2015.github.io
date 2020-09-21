@@ -1,0 +1,56 @@
+*{
+    --card-padding: 20px;
+    --card-img-border-radius: 20px;
+    --loc-phto-by: 30px;
+    --info-padding: 0px 10px;
+    --card-width: 70%;
+    --meal-or-coctail-card-img-width:70%;
+    --meal-or-coctail-card-info-width:30%;
+}
+
+.meal-card, .coctail-card{
+    width: var(--card-width);
+    margin: 0px auto;
+    position: relative;
+    padding: var(--card-padding);
+}
+
+.meal-card img, .coctail-card img{
+    width: 100%;
+    height: auto;
+}
+
+.meal-card-img, .coctail-card-img{
+    width: var(--meal-or-coctail-card-img-width);
+    border-radius: var(--card-img-border-radius);
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.card-info{
+    width: var(--meal-or-coctail-card-info-width);
+    padding: var(--info-padding);
+}
+
+.card-info-left{
+    float: left;
+}
+
+.card-info-right{
+    float: right;
+}
+
+.card-info-left span{
+    position: absolute;
+    bottom: var(--card-padding);
+    left: var(--loc-phto-by);
+}
+
+.card-info-right span{
+    position: absolute;
+    bottom: var(--card-padding);
+    right: var(--loc-phto-by);
+}
+
+
+
