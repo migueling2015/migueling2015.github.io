@@ -88,11 +88,16 @@ article{
 .recipe-card-ingredients-table th{
     font-weight: bold;
     text-align: center;
-    border-bottom: 1px solid var(--dark-black);
 }
 
 .recipe-card-ingredients-table .left-border{
     border-left: 1px solid var(--dark-black);
+    border-bottom: 1px solid var(--dark-black);
+}
+
+.recipe-card-ingredients-table .right-border{
+    border-right: 1px solid var(--dark-black);
+    border-bottom: 1px solid var(--dark-black);
 }
 
 
