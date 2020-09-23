@@ -42,6 +42,7 @@
 
 * a{
     color: var(--link-normal-color);
+    text-decoration: none;
 }
 
 body{
@@ -85,7 +86,7 @@ header h1{
 }
 
 #menu a{
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 20px;
 }
 
@@ -126,3 +127,27 @@ footer .social-media li{
     margin: 0px 5px;
 }
 
+.fixed-btn{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background: var(--dark-black);
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 3px;
+    /* box-shadow: 4px 4px 4px var(--link-normal-color); */
+    cursor: pointer;
+  }
+  
+  .fixed-btn p{
+    text-transform: uppercase;
+    font-family: var(--principal-font-style);
+    font-weight: 900;
+    color: #fff;
+  }
+  
+  .fixed-btn:active{
+    box-shadow: 0  0;
+  }

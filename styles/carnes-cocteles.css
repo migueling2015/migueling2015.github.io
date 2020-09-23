@@ -1,7 +1,7 @@
 *{
     --card-padding: 20px;
     --card-img-border-radius: 20px;
-    --loc-phto-by: 30px;
+    --loc-photo-by: 30px;
     --info-padding: 0px 10px;
     --card-width: 70%;
     --meal-or-coctail-card-img-width:70%;
@@ -43,14 +43,19 @@
 .card-info-left span{
     position: absolute;
     bottom: var(--card-padding);
-    left: var(--loc-phto-by);
+    left: var(--loc-photo-by);
 }
 
 .card-info-right span{
     position: absolute;
     bottom: var(--card-padding);
-    right: var(--loc-phto-by);
+    right: var(--loc-photo-by);
 }
 
+.info-leer-mas{
+    width: 100%;
+    padding: var(--info-padding);
+    text-align: right;
+}
 
 

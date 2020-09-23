@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es-CO">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/general.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/recetas.css" />
     <title>CHEFBASTIAN</title>
   </head>
   <body>
     <!-- START: encabezado de la página -->
     <header>
       <section>
-        <h1 class="page-title">SEBASTIAN COCINA</h1>
+        <a href="./index.html"><h1 class="page-title">SEBASTIAN COCINA</h1></a>
         <!-- START: Navigation -->
         <nav id="menu">
           <ul>
@@ -28,126 +32,304 @@
 
     <!-- START: contenido de la página -->
     <main>
-      <!-- START: tarjeta de receta -->
-      <section class="recipe-card">
-        <div>
-          <img src="./assets/img/placeholder-2-img.png">
-        </div>
-        <div>
-          <div class="recipe-card-initial-data">
-            <h2>Nombre receta 1</h2>
-            <p class="recipe-card-text-rations">Receta para: n porciones</p>
+      <article>
+        <!-- START: tarjeta de receta -->
+        <section class="recipe-card">
+          <div class="recipe-card-info">
+            <div class="recipe-card-img">
+              <img src="./assets/img/recetas/ramen_00.jpg" />
+            </div>
+            <div class="recipe-card-data">
+              <div class="recipe-card-initial-data">
+                <h2>Ramen</h2>
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>
+              </div>
+              <div class="recipe-card-ingredients">
+                <!-- START: tabla de ingredientes -->
+                <table class="recipe-card-ingredients-table">
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>
+                <!-- END: tabla de ingredientes -->
+              </div>
+            </div>
           </div>
-          <div class="recipe-card-ingredients">
-            <!-- START: tabla de ingredientes -->
-            <table class="recipe-card-ingredients-table">
-              <tr>
-                <th>Ingrediente</th>
-                <th>Cantidad</th>
-              </tr>
-              <tr>
-                <th>Ingrediente 1</th>
-                <td>Cantidad 1</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 2</th>
-                <td>Cantidad 2</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 3</th>
-                <td>Cantidad 3</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 4</th>
-                <td>Cantidad 4</td>
-              </tr>
-            </table>
-            <!-- END: tabla de ingredientes -->
+          <div class="recipe-card-footer">
+            <span>Photo by
+              <a href="https://unsplash.com/@ruthyyang?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Ruthy Yang
+              </a>
+              on
+              <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </span>
+            <div class="recipe-card-button">
+              <a href="#"><p>Ver receta</p></a>
+            </div>
           </div>
-          <button type="recipe-card-button">Ver receta</button>
-        </div>
-      </section>
-      <!-- END: tarjeta de receta -->
-      <!-- START: tarjeta de receta -->
-      <section class="recipe-card">
-        <div>
-          <img src="./assets/img/placeholder-2-img.png">
-        </div>
-        <div>
-          <div class="recipe-card-initial-data">
-            <h2>Nombre receta 1</h2>
-            <p class="recipe-card-text-rations">Receta para: n porciones</p>
+        </section>
+        <!-- END: tarjeta de receta -->
+        <!-- START: tarjeta de receta -->
+        <section class="recipe-card">
+          <div class="recipe-card-info">
+            <div class="recipe-card-img">
+              <img src="./assets/img/recetas/omelette_00.jpg" />
+            </div>
+            <div class="recipe-card-data">
+              <div class="recipe-card-initial-data">
+                <h2>Omelette español</h2>
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>
+              </div>
+              <div class="recipe-card-ingredients">
+                <!-- START: tabla de ingredientes -->
+                <table class="recipe-card-ingredients-table">
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>
+                <!-- END: tabla de ingredientes -->
+              </div>
+            </div>
           </div>
-          <div class="recipe-card-ingredients">
-            <!-- START: tabla de ingredientes -->
-            <table class="recipe-card-ingredients-table">
-              <tr>
-                <th>Ingrediente</th>
-                <th>Cantidad</th>
-              </tr>
-              <tr>
-                <th>Ingrediente 1</th>
-                <td>Cantidad 1</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 2</th>
-                <td>Cantidad 2</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 3</th>
-                <td>Cantidad 3</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 4</th>
-                <td>Cantidad 4</td>
-              </tr>
-            </table>
-            <!-- END: tabla de ingredientes -->
+          <div class="recipe-card-footer">
+            <span>Photo by 
+              <a href="https://unsplash.com/@eaterscollective?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Eaters Collective
+              </a> 
+              on 
+              <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </span>
+            <div class="recipe-card-button">
+              <a href="#"><p>Ver receta</p></a>
+            </div>
           </div>
-          <button type="recipe-card-button">Ver receta</button>
-        </div>
-      </section>
-      <!-- END: tarjeta de receta -->
-      <!-- START: tarjeta de receta -->
-      <section class="recipe-card">
-        <div>
-          <img src="./assets/img/placeholder-2-img.png">
-        </div>
-        <div>
-          <div class="recipe-card-initial-data">
-            <h2>Nombre receta 1</h2>
-            <p class="recipe-card-text-rations">Receta para: n porciones</p>
+        </section>
+        <!-- END: tarjeta de receta -->
+        <!-- START: tarjeta de receta -->
+        <section class="recipe-card">
+          <div class="recipe-card-info">
+            <div class="recipe-card-img">
+              <img src="./assets/img/recetas/beef_bourgignon_00.jpg" />
+            </div>
+            <div class="recipe-card-data">
+              <div class="recipe-card-initial-data">
+                <h2>Beef bourgignon</h2>
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>
+              </div>
+              <div class="recipe-card-ingredients">
+                <!-- START: tabla de ingredientes -->
+                <table class="recipe-card-ingredients-table">
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>
+                <!-- END: tabla de ingredientes -->
+              </div>
+            </div>
           </div>
-          <div class="recipe-card-ingredients">
-            <!-- START: tabla de ingredientes -->
-            <table class="recipe-card-ingredients-table">
-              <tr>
-                <th>Ingrediente</th>
-                <th>Cantidad</th>
-              </tr>
-              <tr>
-                <th>Ingrediente 1</th>
-                <td>Cantidad 1</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 2</th>
-                <td>Cantidad 2</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 3</th>
-                <td>Cantidad 3</td>
-              </tr>
-              <tr>
-                <th>Ingrediente 4</th>
-                <td>Cantidad 4</td>
-              </tr>
-            </table>
-            <!-- END: tabla de ingredientes -->
+          <div class="recipe-card-footer">
+            <span>Photo by 
+              <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Charles Deluvio
+              </a> 
+              on 
+              <a href="https://unsplash.com/s/photos/beef-bourgignon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </span>
+            <div class="recipe-card-button">
+              <a href="#"><p>Ver receta</p></a>
+            </div>
           </div>
-          <button type="recipe-card-button">Ver receta</button>
-        </div>
-      </section>
-      <!-- END: tarjeta de receta -->
+        </section>
+        <!-- END: tarjeta de receta -->
+        <!-- START: tarjeta de receta -->
+        <section class="recipe-card">
+          <div class="recipe-card-info">
+            <div class="recipe-card-img">
+              <img src="./assets/img/recetas/t_bone_00.jpg" />
+            </div>
+            <div class="recipe-card-data">
+              <div class="recipe-card-initial-data">
+                <h2>¡T-bone steak!</h2>
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>
+              </div>
+              <div class="recipe-card-ingredients">
+                <!-- START: tabla de ingredientes -->
+                <table class="recipe-card-ingredients-table">
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>
+                <!-- END: tabla de ingredientes -->
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card-footer">
+            <span>
+              Photo by 
+              <a href="https://unsplash.com/@hanxiaoyaaaaa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Hanxiao
+              </a> 
+              on 
+              <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </span>
+            <div class="recipe-card-button">
+              <a href="#"><p>Ver receta</p></a>
+            </div>
+          </div>
+        </section>
+        <!-- END: tarjeta de receta -->
+        <!-- START: tarjeta de receta -->
+        <section class="recipe-card">
+          <div class="recipe-card-info">
+            <div class="recipe-card-img">
+              <img src="./assets/img/recetas/atun_sellado_00.jpg" />
+            </div>
+            <div class="recipe-card-data">
+              <div class="recipe-card-initial-data">
+                <h2>Filette de atún</h2>
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>
+              </div>
+              <div class="recipe-card-ingredients">
+                <!-- START: tabla de ingredientes -->
+                <table class="recipe-card-ingredients-table">
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>
+                <!-- END: tabla de ingredientes -->
+              </div>
+            </div>
+          </div>
+          <div class="recipe-card-footer">
+            <span>Photo by 
+              <a href="https://unsplash.com/@iamcristian?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                IamCristian
+              </a>
+               on 
+               <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </span>
+            <div class="recipe-card-button">
+              <a href="#"><p>Ver receta</p></a>
+            </div>
+          </div>
+        </section>
+        <!-- END: tarjeta de receta -->
+        <!-- START: tarjeta de receta -->
+        <section class="recipe-card">        
+          <div class="recipe-card-info">        
+            <div class="recipe-card-img">        
+              <img src="./assets/img/recetas/costillitas_de_cerdo_00.jpg" />        
+            </div>        
+            <div class="recipe-card-data">        
+              <div class="recipe-card-initial-data">        
+                <h2>Costillitas de cerdo</h2>        
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>        
+              </div>        
+              <div class="recipe-card-ingredients">        
+                <!-- START: tabla de ingredientes -->        
+                <table class="recipe-card-ingredients-table">        
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>        
+                <!-- END: tabla de ingredientes -->        
+              </div>        
+            </div>        
+          </div>        
+          <div class="recipe-card-footer">        
+            <span>Photo by         
+              <a href="https://unsplash.com/@jontyson?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">        
+                Jon Tyson        
+              </a>         
+              on         
+              <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">        
+                Unsplash        
+              </a>        
+            </span>        
+            <div class="recipe-card-button">        
+              <a href="#"><p>Ver receta</p></a>        
+            </div>        
+          </div>        
+        </section>        
+        <!-- END: tarjeta de receta -->   
+        <!-- START: tarjeta de receta -->        
+        <section class="recipe-card">                
+          <div class="recipe-card-info">                
+            <div class="recipe-card-img">                
+              <img src="./assets/img/recetas/tacos_00.jpg" />                
+            </div>                
+            <div class="recipe-card-data">                
+              <div class="recipe-card-initial-data">                
+                <h2>Tacos</h2>                
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>                
+              </div>                
+              <div class="recipe-card-ingredients">                
+                <!-- START: tabla de ingredientes -->                
+                <table class="recipe-card-ingredients-table">                
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>                
+                <!-- END: tabla de ingredientes -->                
+              </div>                
+            </div>                
+          </div>                
+          <div class="recipe-card-footer">                
+            <span>
+              Photo by 
+              <a href="https://unsplash.com/@jeswinthomas?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Jeswin Thomas
+              </a> 
+              on 
+              <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </span>               
+            <div class="recipe-card-button">                
+              <a href="#"><p>Ver receta</p></a>                
+            </div>                
+          </div>                
+        </section>                
+        <!-- END: tarjeta de receta -->    
+        <!-- START: tarjeta de receta -->        
+        <section class="recipe-card">                
+          <div class="recipe-card-info">                
+            <div class="recipe-card-img">                
+              <img src="./assets/img/recetas/beef_00.jpg" />                
+            </div>                
+            <div class="recipe-card-data">                
+              <div class="recipe-card-initial-data">                
+                <h2>Beef</h2>                
+                <p class="recipe-card-text-rations">Receta para: n porciones</p>                
+              </div>                
+              <div class="recipe-card-ingredients">                
+                <!-- START: tabla de ingredientes -->                
+                <table class="recipe-card-ingredients-table">                
+                  <tr><td>Huevo de Gallina</td><td class="left-border">6 un</td></tr><tr><td>Ajo</td><td class="left-border">2 dientes</td></tr><tr><td>Papa blanca</td><td class="left-border">100 g</td></tr><tr><td>Jamón Serrano</td><td class="left-border">100 g</td></tr><tr><td>Mantequilla</td><td class="left-border">10 g</td></tr><tr><td>Aceite de oliva</td><td class="left-border">1 cucharada</td></tr><tr><td>Queso doble crema</td><td class="left-border">50 g</td></tr><tr><td>Sal y pimienta</td><td class="left-border">Al gusto</td></tr>
+                </table>                
+                <!-- END: tabla de ingredientes -->                
+              </div>                
+            </div>                
+          </div>                
+          <div class="recipe-card-footer">                
+            <span>
+              Photo by 
+              <a href="https://unsplash.com/@emersonvieira?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Emerson Vieira
+              </a>
+               on 
+               <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">
+                Unsplash
+              </a>
+            </span>              
+            <div class="recipe-card-button">                
+              <a href="#"><p>Ver receta</p></a>                
+            </div>                
+          </div>                
+        </section>                
+        <!-- END: tarjeta de receta -->             
+      </article>
+      <!-- START: botón flotante para pasar a formulario de contacto-->
+      <div class="fixed-btn">
+        <a href="./contacto.html"><p>Contactar</p></a>
+      </div>
+      <!-- END: botón flotante para pasar a formulario de contacto-->
     </main>
     <!-- END: contenido de la página -->
 
@@ -156,22 +338,63 @@
       <section class="data-footer">
         <h3>REDES SOCIALES</h3>
         <ul class="social-media">
-          <li><a href="#"><img src="./assets/img/iconos/013-twitter.svg" alt="link to twitter's profile" width="30px" height="auto"></a></li>
-          <li><a href="#"><img src="./assets/img/iconos/027-linkedin.svg" alt="link to linkein's profile" width="30px" height="auto"></a></li>
-          <li><a href="#"><img src="./assets/img/iconos/029-instagram.svg" alt="link to instagram's profile" width="30px" height="auto"></a></li>
-          <li><a href="#"><img src="./assets/img/iconos/036-facebook.svg" alt="link to facebooks's profile" width="30px" height="auto"></a></li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/img/iconos/013-twitter.svg"
+                alt="link to twitter's profile"
+                width="30px"
+                height="auto"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/img/iconos/027-linkedin.svg"
+                alt="link to linkein's profile"
+                width="30px"
+                height="auto"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/img/iconos/029-instagram.svg"
+                alt="link to instagram's profile"
+                width="30px"
+                height="auto"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="./assets/img/iconos/036-facebook.svg"
+                alt="link to facebooks's profile"
+                width="30px"
+                height="auto"
+            /></a>
+          </li>
         </ul>
         <p class="disclaimer">
           &copy; 2020 - Es una página web de práctica con CoderHouse -
         </p>
         <p>
-          Iconos diseñados por <a href="https://www.flaticon.es/autores/freepik" title="Freepik">Freepik</a> 
-          y <a href="https://www.flaticon.es/autores/icongeek26" title="Icongeek26">Icongeek26</a>,
-          from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+          Iconos diseñados por
+          <a href="https://www.flaticon.es/autores/freepik" title="Freepik"
+            >Freepik</a
+          >
+          y
+          <a
+            href="https://www.flaticon.es/autores/icongeek26"
+            title="Icongeek26"
+            >Icongeek26</a
+          >, from
+          <a href="https://www.flaticon.es/" title="Flaticon">
+            www.flaticon.es</a
+          >
         </p>
       </section>
     </footer>
     <!-- END: footer de la página -->
-
   </body>
 </html>
