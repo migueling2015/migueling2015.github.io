@@ -1,9 +1,9 @@
 *{
     --article-container-max-width: 1200px;
     --recipe-card-padding: 10px;
-    --recipe-card-with:300px;
+    --recipe-card-with:350px;
     --recipe-card-height:550px;
-    --recipe-card-margin:50px 50px;
+    --recipe-card-margin:50px 25px;
     --recipe-card-border-unactive:2px solid var(--link-hover-color);
     --recipe-card-border-active:2px solid var(--dark-black);
     --recipe-card-border:10px;
@@ -99,7 +99,7 @@ article{
 .recipe-card-button{
     display: flex;
     background: var(--dark-black);
-    min-width: 250px;
+    min-width: 300px;
     width: 100%;
     height: 35px;
     line-height: 25px;
