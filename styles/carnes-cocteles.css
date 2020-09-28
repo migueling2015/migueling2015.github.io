@@ -10,7 +10,8 @@
 
 .meal-card, .coctail-card{
     width: var(--card-width);
-    margin: 0px auto;
+    margin: 50px auto;
+    margin-top: 0px;
     position: relative;
     padding: var(--card-padding);
 }
@@ -25,6 +26,18 @@
     border-radius: var(--card-img-border-radius);
     max-height: 600px;
     overflow: hidden;
+    margin-right: 20px;
+    float: left;
+}
+
+.meal-card-img-left,.coctail-card-img-left{
+    margin-right: 20px;
+    float: left;
+}
+
+.meal-card-img-right,.coctail-card-img-right{
+    margin-right: 50px;
+    float: right;
 }
 
 .card-info{
@@ -32,30 +45,18 @@
     padding: var(--info-padding);
 }
 
-.card-info-left{
-    float: left;
-}
 
-.card-info-right{
-    float: right;
-}
-
-.card-info-left span{
+/* .meal-card span{
     position: absolute;
     bottom: var(--card-padding);
     left: var(--loc-photo-by);
-}
+} */
 
-.card-info-right span{
-    position: absolute;
-    bottom: var(--card-padding);
-    right: var(--loc-photo-by);
-}
 
-.info-leer-mas{
+/* .info-leer-mas{
     width: 100%;
     padding: var(--info-padding);
     text-align: right;
-}
+} */
 
 

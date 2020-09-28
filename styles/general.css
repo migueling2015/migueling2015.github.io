@@ -95,7 +95,6 @@ header h1{
     text-decoration: underline;
 }
 
-
 /* PARÁMETROS DEL PIE DE PAGINA */
 
 footer{
@@ -127,6 +126,11 @@ footer .social-media li{
     margin: 0px 5px;
 }
 
+.social-media-icon{
+    height: 30px;
+    width: auto;
+}
+
 .fixed-btn{
     position: fixed;
     bottom: 50px;
@@ -137,7 +141,6 @@ footer .social-media li{
     line-height: 45px;
     text-align: center;
     border-radius: 3px;
-    /* box-shadow: 4px 4px 4px var(--link-normal-color); */
     cursor: pointer;
   }
   
@@ -151,3 +154,47 @@ footer .social-media li{
   .fixed-btn:active{
     box-shadow: 0  0;
   }
+
+@media (max-width: 1050px){
+    * h1{
+        font-size: 40px;
+    }
+    
+    * h2{
+        font-size: 28px;
+    }
+    
+    * h3{
+        font-size: 20px;
+    }
+
+    .data-footer{
+        width: 70%;
+        margin: 0PX auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 647px){
+    * h1{
+        font-size: 32px;
+    }
+    
+    * h2{
+        font-size: 22px;
+    }
+    
+    * h3{
+        font-size: 16px;
+    }
+
+    .social-media-icon{
+        height: 25px;
+        width: auto;
+    }
+
+    footer p{
+        font-size: 12px;
+        margin: 3px;
+    }
+}

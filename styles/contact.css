@@ -28,3 +28,11 @@ main{
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+
+@media (max-width: 1050px){
+    main{
+        width: 80%;
+        margin: 0px auto;
+        position: relative;
+    }
+}
