@@ -19,7 +19,7 @@ article{
     max-width: var(--article-container-max-width);
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .recipe-card{

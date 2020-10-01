@@ -1,5 +1,7 @@
 /* DECLARACION DE VARIABLES, Y AJUSTE DE PARÁMETROS GLOBALES */
 
+/* ESTILOS NORMALES (generales, y para escritorios)
+   ========================================================================= */
 
 * {
     /* DECLARACION DE VARIABLES: */
@@ -86,7 +88,6 @@ header h1{
 }
 
 #menu a{
-    /* text-decoration: none; */
     font-size: 20px;
 }
 
@@ -133,29 +134,73 @@ footer .social-media li{
 
 .fixed-btn{
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 100px;
+    right: 20px;
     background: var(--dark-black);
-    width: 180px;
+    width: 160px;
     height: 45px;
     line-height: 45px;
     text-align: center;
     border-radius: 3px;
     cursor: pointer;
-  }
+}
   
-  .fixed-btn p{
+.fixed-btn p{
     text-transform: uppercase;
     font-family: var(--principal-font-style);
     font-weight: 900;
-    color: #fff;
-  }
-  
-  .fixed-btn:active{
-    box-shadow: 0  0;
-  }
+    color: #d9d9d9;;
+}
 
-@media (max-width: 1050px){
+.fixed-btn:active{
+    box-shadow: 0  0;
+}
+
+.fixed-btn-responsive{
+    visibility: hidden;
+}
+  
+.fixed-btn-responsive img{
+    width: 0px;
+    height: 0px;
+}
+  
+
+/* RESPONSIVE
+   ========================================================================= 
+/ Tablets */ 
+
+@media (min-width: 1051px) and (max-width: 1369px){
+    .fixed-btn-responsive{
+        visibility: visible;
+        background: #d9d9d9;;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .fixed-btn-responsive img{
+        visibility: visible;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .fixed-btn{
+        visibility: hidden;
+    }
+
+    .fixed-btn *{
+        height: 0px;
+        width: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1050px){
     * h1{
         font-size: 40px;
     }
@@ -169,13 +214,50 @@ footer .social-media li{
     }
 
     .data-footer{
-        width: 70%;
+        width: 90%;
         margin: 0PX auto;
         text-align: center;
     }
+
+    .fixed-btn-responsive{
+        visibility: visible;
+        background: #d9d9d9;;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .fixed-btn-responsive img{
+        visibility: visible;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .fixed-btn{
+        visibility: hidden;
+    }
+
+    .fixed-btn *{
+        height: 0px;
+        width: 0px;
+        bottom: 0px;
+        top: 0px;
+    }
 }
 
-@media (max-width: 647px){
+/* RESPONSIVE
+   ========================================================================= 
+/ Celurares */ 
+
+@media (max-width: 576px){
+
+    footer{
+        padding: 5px 0px;
+    }
+
     * h1{
         font-size: 32px;
     }
@@ -188,6 +270,10 @@ footer .social-media li{
         font-size: 16px;
     }
 
+    #menu a{
+        font-size: 16px;
+    }
+
     .social-media-icon{
         height: 25px;
         width: auto;
@@ -196,5 +282,33 @@ footer .social-media li{
     footer p{
         font-size: 12px;
         margin: 3px;
+    }
+    
+    .fixed-btn-responsive{
+        visibility: visible;
+        background: #d9d9d9;;
+        position: fixed;
+        bottom: 50px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .fixed-btn-responsive img{
+        visibility: visible;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .fixed-btn{
+        visibility: hidden;
+    }
+
+    .fixed-btn *{
+        height: 0px;
+        width: 0px;
+        bottom: 0px;
+        top: 0px;
     }
 }
