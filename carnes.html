@@ -4,30 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/carnes-cocteles.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
     <title>CHEFBASTIAN</title>
   </head>
   <body>
-    <!-- START: encabezado de la página-->
-    <header>
-      <section>
-        <a href="./index.html"><h1 class="page-title">SEBASTIAN COCINA</h1></a>
-        <!-- START: Navigation -->
-        <nav id="menu">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./cocteles.html">Cocteles</a></li>
-            <li><a href="./carnes.html">Carnes</a></li>
-            <li><a href="./recetas.html">Recetas</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </section>
-      <!-- END: Navigation -->
-    </header>
-    <!-- END: encabezado de la página-->
-
+    <!-- START: encabezado de la página -->
+    <div class="container">
+      <header>
+        <section>
+          <div class="row flex-nowrap justify-content-center align-items-center header-title">
+            <a href="./index.html"></a><h1 class="page-title">SEBASTIAN COCINA</h1></a>
+          </div>
+          <!-- START: Navigation -->
+          <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between" id="menu">
+              <a href="./index.html">Home</a>
+              <a href="./cocteles.html">Cocteles</a>
+              <a href="./carnes.html">Carnes</a>
+              <a href="./recetas.html">Recetas</a>
+              <a href="./contacto.html">Contacto</a>
+            </nav>
+          </div>
+        </section>
+        <!-- END: Navigation -->
+      </header>
+    </div>
+    <!-- END: encabezado de la página -->
     <!-- START: contenido de la página -->
     <main>
       <!-- START: tarjeta de carnes -->
