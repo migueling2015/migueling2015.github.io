@@ -1,3 +1,28 @@
+
+*{
+  --animation-x-tiempo-total: 15s;
+}
+
+.animation--X{
+  animation: mixing_loop_with_waiting var(--animation-x-tiempo-total) linear infinite;
+  transform-origin: 0% 50%;
+}
+        
+.animation-X{
+  animation: mixing_loop_with_waiting var(--animation-x-tiempo-total) linear infinite;
+  transform-origin: 110% 50%;
+}
+      
+@media(min-width:577px) and (max-height: 930px){
+  .animation--X{
+    animation: moving_go_and_back_with_waiting_1 var(--animation-x-tiempo-total) linear infinite;
+  }
+         
+  .animation-X{
+    animation: moving_go_and_back_with_waiting_2 var(--animation-x-tiempo-total) linear infinite;
+  }
+}
+
 @keyframes mixing_loop_with_waiting {
     0% {
       transform: rotate(0deg)
@@ -72,3 +97,5 @@
     transform: translateX(0%)rotate(0deg);
   }
 }
+
+

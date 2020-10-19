@@ -3,36 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles/general.css" />
-    <link rel="stylesheet" href="./styles/recetas.css" />
+    <meta name="description" content="Página de cocina, con algunos artículos sobre cocteles y carnes; además de recetas y un formulario de contacto"/>
+    <meta name="keywords" content="trabajo, chef, recetas, carnes, cocteles"/>
+    <meta name="author" content="Miguel Prada" />
+    <meta name="copyright" content="Sebastian Cañas" />
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/general_SASS.css">
+    
     <title>CHEFBASTIAN</title>
   </head>
-  <body>
+  <body> 
     <!-- START: encabezado de la página -->
-    <header>
-      <section>
-        <a href="./index.html"><h1 class="page-title">SEBASTIAN COCINA</h1></a>
-        <!-- START: Navigation -->
-        <nav id="menu">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./cocteles.html">Cocteles</a></li>
-            <li><a href="./carnes.html">Carnes</a></li>
-            <li><a href="./recetas.html">Recetas</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </section>
-      <!-- END: Navigation -->
-    </header>
+    <div class="container">
+      <header>
+        <section>
+          <div class="row flex-nowrap justify-content-center align-items-center header-title">
+            <a href="./index.html"><h1 class="page-title">SEBASTIAN COCINA</h1></a>
+          </div>
+          <!-- START: Navigation -->
+          <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between" id="menu">
+              <a href="./index.html">Home</a>
+              <a href="./cocteles.html">Cocteles</a>
+              <a href="./carnes.html">Carnes</a>
+              <a href="./recetas.html">Recetas</a>
+              <a href="./contacto.html">Contacto</a>
+            </nav>
+          </div>
+        </section>
+        <!-- END: Navigation -->
+      </header>
+    </div>
     <!-- END: encabezado de la página -->
 
     <!-- START: contenido de la página -->
-    <main>
+    <main class="main-recetas">
       <article>
         <!-- START: tarjeta de receta -->
         <section class="recipe-card">
@@ -65,7 +71,7 @@
               </a>
             </span>
             <div class="recipe-card-button">
-              <a href="#"><p>Ver receta</p></a>
+              <button type="button">Ver receta</button>
             </div>
           </div>
         </section>
@@ -101,7 +107,7 @@
               </a>
             </span>
             <div class="recipe-card-button">
-              <a href="#"><p>Ver receta</p></a>
+              <button type="button">Ver receta</button>
             </div>
           </div>
         </section>
@@ -137,7 +143,7 @@
               </a>
             </span>
             <div class="recipe-card-button">
-              <a href="#"><p>Ver receta</p></a>
+              <button type="button">Ver receta</button>
             </div>
           </div>
         </section>
@@ -174,7 +180,7 @@
               </a>
             </span>
             <div class="recipe-card-button">
-              <a href="#"><p>Ver receta</p></a>
+              <button type="button">Ver receta</button>
             </div>
           </div>
         </section>
@@ -210,7 +216,7 @@
               </a>
             </span>
             <div class="recipe-card-button">
-              <a href="#"><p>Ver receta</p></a>
+              <button type="button">Ver receta</button>
             </div>
           </div>
         </section>
@@ -245,9 +251,9 @@
                 Unsplash        
               </a>        
             </span>        
-            <div class="recipe-card-button">        
-              <a href="#"><p>Ver receta</p></a>        
-            </div>        
+            <div class="recipe-card-button">
+              <button type="button">Ver receta</button>
+            </div>       
           </div>        
         </section>        
         <!-- END: tarjeta de receta -->   
@@ -282,9 +288,9 @@
                 Unsplash
               </a>
             </span>               
-            <div class="recipe-card-button">                
-              <a href="#"><p>Ver receta</p></a>                
-            </div>                
+            <div class="recipe-card-button">
+              <button type="button">Ver receta</button>
+            </div>             
           </div>                
         </section>                
         <!-- END: tarjeta de receta -->    
@@ -319,9 +325,9 @@
                 Unsplash
               </a>
             </span>              
-            <div class="recipe-card-button">                
-              <a href="#"><p>Ver receta</p></a>                
-            </div>                
+            <div class="recipe-card-button">
+              <button type="button">Ver receta</button>
+            </div>             
           </div>                
         </section>                
         <!-- END: tarjeta de receta -->             

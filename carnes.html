@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Página de cocina, con algunos artículos sobre cocteles y carnes; además de recetas y un formulario de contacto"/>
+    <meta name="keywords" content="trabajo, chef, receta, carnes, cocteles"/>
+    <meta name="author" content="Miguel Prada" />
+    <meta name="copyright" content="Sebastian Cañas" />
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/general.css">
-    <link rel="stylesheet" href="./styles/carnes-cocteles.css">
+    <link rel="stylesheet" href="./styles/general_SASS.css">
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
@@ -18,7 +21,7 @@
       <header>
         <section>
           <div class="row flex-nowrap justify-content-center align-items-center header-title">
-            <a href="./index.html"></a><h1 class="page-title">SEBASTIAN COCINA</h1></a>
+            <a href="./index.html"><h1 class="page-title">SEBASTIAN COCINA</h1></a>
           </div>
           <!-- START: Navigation -->
           <div class="nav-scroller py-1 mb-2">
@@ -35,45 +38,60 @@
       </header>
     </div>
     <!-- END: encabezado de la página -->
-    <!-- START: contenido de la página -->
-    <main>
+    <main class="main-coctail-card">
       <!-- START: tarjeta de carnes -->
       <section class="meal-card">
-        <div class="meal-card-img meal-card-img-left">
+        <div class="meal-card-img">
           <img src="https://i.ibb.co/vjRkdMS/mae-mu-ICA6-Pt-RBYLw-unsplash.jpg" alt="corte beef">
         </div>
-        <!-- <div class="card-info card-info-right"> -->
-          <h2><a href="#">BEEF</a></h2>
-          <br>
-          <p class="meal-card-text">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-          </p>
-          <br>
-          <br>
+        <div class="card-info">
+          <div>
+            <h2><a href="#">BEEF</a></h2>
+            <br>
+            <p class="meal-card-text">
+              El primer paso, y uno muy importante, 
+              es la elección de una pieza de carne de calidad. 
+              Un buen producto garantiza un buen resultado y con 
+              el roast beef mucho más, así que hay que asegurarse de 
+              comprar la mejor pieza de ternera o buey que tengamos a 
+              nuestro alcance.
+            </p>
+            <br>
+            <p class="leer-mas"><a href="#">Leer más...</a></p>
+          </div>
           <div class="info-leer-mas">
-          <span>Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-        <!-- </div> -->
+            <span>Photo by <a href="https://unsplash.com/@picoftasty?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mae Mu</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          </div>
+        </div>
       </section>
       <!-- END: tarjeta de carnes -->
       <!-- START: tarjeta de carnes -->
       <section class="meal-card">
-        <div class="meal-card-img meal-card-img-right">
+        <div class="meal-card-img">
           <img src="https://i.ibb.co/vcwkrRN/victoria-shes-Xg-FFJKSPk-Nk-unsplash.jpg" alt="T-bone steak">
         </div>
-          <h2><a href="#">T-BONE STEAK</a></h2>
-          <br>
-          <p class="meal-card-text">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-          </p>
-          <br>
-          <br>
-          <span>Photo by <a href="https://unsplash.com/@victoriakosmo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Victoria Shes</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        <div class="card-info">
+          <div>
+            <h2><a href="#">T-BONE STEAK</a></h2>
+            <br>
+            <p class="meal-card-text">
+              El T-bone es un corte que reúne dos piezas de carne 
+              suculentas: el solomillo y el entrecot. La parte más 
+              pequeña es la del primero y la de mayor tamaño del segundo. 
+              El corte se realiza de la parte baja del lomo de ganado 
+              vacuno. No obstante, existen varias clases de T-bone porque 
+              en algunos casos se realiza en una parte más alta del lomo 
+              e incluye dos partes de entrecot y ninguna de solomillo. Una 
+              controversia en el mundo de la gastronomía, aunque el T-bone 
+              clásico sí contiene tenderloin o solomillo.
+            </p>
+            <br>
+            <p class="leer-mas"><a href="#">Leer más...</a></p>
+          </div>
+          <div class="info-leer-mas">
+            <span>Photo by <a href="https://unsplash.com/@victoriakosmo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Victoria Shes</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          </div>
+        </div>
       </section>
       <!-- END: tarjeta de carnes -->
       <!-- START: tarjeta de carnes -->
@@ -81,17 +99,25 @@
         <div class="meal-card-img meal-card-img-left">
           <img src="https://i.ibb.co/kmfQDPd/jonathan-borba-f-IGQshb-Bh0-unsplash.jpg" alt="costillas">
         </div>
-          <h2><a href="#">COSTILLAS</a></h2>
-          <br>
-          <p class="meal-card-text">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
-          </p>
-          <br>
-          <br>
-          <span>Photo by <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Borba</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-      </section>
+        <div class="card-info">
+          <div>
+            <h2><a href="#">COSTILLAS</a></h2>
+            <br>
+            <p class="meal-card-text">
+              Las costillas de cerdo son un corte especial del cerdo, 
+              diferente de la chuleta. Este corte contiene las partes 
+              óseas de la caja torácica del cerdo doméstico, que se denomina 
+              costillas. Se caracteriza por ofrecer una alternancia de hueso y 
+              carne que habitualmente se cocinan juntos.
+            </p>
+            <br>
+            <p class="leer-mas"><a href="#">Leer más...</a></p>
+          </div>
+          <div class="info-leer-mas">
+            <span>Photo by <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Borba</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          </div>
+        </div>
+        </section>
       <!-- END: tarjeta de carnes -->
       <!-- START: botón flotante para pasar a formulario de contacto-->
       <div class="fixed-btn-responsive">

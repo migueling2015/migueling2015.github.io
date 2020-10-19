@@ -3,46 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Página de cocina, con algunos artículos sobre cocteles y carnes; además de recetas y un formulario de contacto"/>
+    <meta name="keywords" content="trabajo, chef, receta, carnes, cocteles"/>
+    <meta name="author" content="Miguel Prada" />
+    <meta name="copyright" content="Sebastian Cañas" />
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/general.css">
-    <link rel="stylesheet" href="./styles/carnes-cocteles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/general_SASS.css">
     <title>CHEFBASTIAN</title>
   </head>
   <body>
     <!-- START: encabezado de la página -->
-    <header>
-      <section>
-        <a href="./index.html"><h1 class="page-title">SEBASTIAN COCINA</h1></a>
-        <!-- START: Navigation -->
-        <nav id="menu">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./cocteles.html">Cocteles</a></li>
-            <li><a href="./carnes.html">Carnes</a></li>
-            <li><a href="./recetas.html">Recetas</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </section>
-      <!-- END: Navigation -->
-    </header>
+    <div class="container">
+      <header>
+        <section>
+          <div class="row flex-nowrap justify-content-center align-items-center header-title">
+            <a href="./index.html"><h1 class="page-title">SEBASTIAN COCINA</h1></a>
+          </div>
+          <!-- START: Navigation -->
+          <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between" id="menu">
+              <a href="./index.html">Home</a>
+              <a href="./cocteles.html">Cocteles</a>
+              <a href="./carnes.html">Carnes</a>
+              <a href="./recetas.html">Recetas</a>
+              <a href="./contacto.html">Contacto</a>
+            </nav>
+          </div>
+        </section>
+        <!-- END: Navigation -->
+      </header>
+    </div>
     <!-- END: encabezado de la página -->
 
     <!-- START: contenido de la página -->
-    <main>
+    <main class="main-coctail-card">
       <!-- START: tarjeta de coctel -->
       <section class="coctail-card">
         <div class="coctail-card-img coctail-card-img-left">
           <img src="https://i.ibb.co/512LR48/andrijana-bozic-x-QBPS2up-4-M-unsplash.jpg" alt="Palomita">
         </div>
-        <div>
-          <h2><a href="#">PALOMITA</a></h2>
-          <br>
-          <p class="coctail-card-text">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  </p>
-          <br>
-          <a class="leer-mas-structure" href="#">Leer más...</a>
-          <br>
-          <span>Photo by <a href="https://unsplash.com/@vesnikproleca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrijana Bozic</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        <div class="card-info">
+          <div>
+            <h2><a href="#">PALOMITA</a></h2>
+            <br>
+            <p class="coctail-card-text">
+              Es un cóctel a base de tequila. Esta bebida se prepara 
+              más comúnmente mezclando tequila, jugo de limón y un 
+              refresco con sabor a toronja como Fresca, Squirt o 
+              Jarritos y se sirve en las rocas con una rodaja de limón. 
+              Agregar sal al borde del vaso también es una opción
+            </p>
+            <br>
+            <p class="leer-mas"><a href="#">Leer más...</a></p>
+          </div>
+          <div class="info-leer-mas">
+            <span>Photo by <a href="https://unsplash.com/@vesnikproleca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrijana Bozic</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          </div>
         </div>
       </section>
       <!-- END: tarjeta de coctel -->
@@ -51,13 +68,24 @@
         <div class="coctail-card-img coctail-card-img-right">
           <img src="https://i.ibb.co/n8Y2w7n/paige-ledford-qhfe60z-L8-Q-unsplash.jpg" alt="old fashion">
         </div>
-          <h2><a href="#">OLD FASHION</a></h2>
-          <br>
-          <p class="coctail-card-text">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum </p>
-          <br>
-          <a class="leer-mas-structure" href="#">Leer más...</a>
-          <br>
-          <span>Photo by <a href="https://unsplash.com/@off_the_paige?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Paige Ledford</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        <div class="card-info">
+          <div>
+            <h2><a href="#">OLD FASHION</a></h2>
+            <br>
+            <p class="coctail-card-text">
+              El Old Fashioned es un cóctel elaborado con azúcar, 
+              bíter, whisky, y adornando con un twist cítrico. Se 
+              sirve tradicionalmente en un vaso Old Fashioned, 
+              también conocido como vaso de rocas, el cual nombró al cóctel. 
+              Desarrollado durante el siglo XIX, concretamente en los años 1880.
+            </p>
+            <br>
+            <p class="leer-mas"><a href="#">Leer más...</a></p>
+          </div>
+          <div class="info-leer-mas">
+            <span>Photo by <a href="https://unsplash.com/@vesnikproleca?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Andrijana Bozic</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          </div>
+        </div>
       </section>
       <!-- END: tarjeta de coctel -->
       <!-- START: tarjeta de coctel -->
@@ -65,13 +93,25 @@
         <div class="coctail-card-img  coctail-card-img-left">
           <img src="https://i.ibb.co/4m3cydX/wine-dharma-Y9w-R-KCqf-Gc-unsplash.jpg" alt="Moscow mulle" >
         </div>
-          <h2><a href="#">MOSCOW MULE</a></h2>
-          <br>
-          <p class="coctail-card-text">lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum  lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-          <br>
-          <a class="leer-mas-structure" href="#">Leer más...</a>
-          <br>
-          <span>Photo by <a href="https://unsplash.com/@winedharma?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Wine Dharma</a> on <a href="https://unsplash.com/photos/2l6hAHZXr5k?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+        <div class="card-info">
+          <div>
+            <h2><a href="#">MOSCOW MULE</a></h2>
+            <br>
+            <p class="coctail-card-text">
+              El Moscow Mule es un cóctel hecho con vodka, 
+              cerveza de jengibre y jugo de lima, adornado 
+              con una rodaja de lima. Es un tipo de buck o mule, 
+              cócteles a base de lima, ginger ale o ginger beer y 
+              alguna bebida alcohólica. Por ello a veces se le llama 
+              vodka buck.
+            </p>
+            <br>
+            <p class="leer-mas"><a href="#">Leer más...</a></p>
+          </div>
+          <div class="info-leer-mas">
+            <span>Photo by <a href="https://unsplash.com/@winedharma?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Wine Dharma</a> on <a href="https://unsplash.com/photos/2l6hAHZXr5k?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+          </div>
+        </div>
       </section>
       <!-- END: tarjeta de coctel -->
     </main>
